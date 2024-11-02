@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #858792;
+}
+
+body {
+    background-color: #2a2c39;
+    height: 100vh;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    margin-top: 80px;
+}

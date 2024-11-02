@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.yearContainer {
+    width: 10%;
+    height: 10%;
+    margin: 10px;
+}
+
+.descriptionContainer {
+    width: 90%;
+    height: 10%;
+    margin: 10px;
+}

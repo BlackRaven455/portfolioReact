@@ -1,0 +1,32 @@
+.header {
+    margin: 10px auto;
+    color: #FFFFFF;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    padding: 10px;
+    margin: 10px;
+    height: 80px;
+    width: 40%;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
+    font-size: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: transparent;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: #32383f;
+}
