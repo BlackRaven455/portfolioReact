@@ -6,25 +6,24 @@ import Homepage from "./pages/Homepage.jsx";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contacts from "./pages/Contacts.jsx";
-import { Provider } from "./context/Context.jsx";
+import { Provider } from "./context/UserContext.jsx";
 
 function App() {
   return (
     <div className={"App"}>
-      <BrowserRouter>
-        <Navbar />
-        <div className={"main"}></div>
-        <Routes>
-          <Provider>
+      <Provider>
+        <BrowserRouter>
+          <Navbar />
+          <div className={"main"}></div>
+          <Routes>
             <Route index element={<Homepage />} />
             <Route path={"/about"} element={<About />} />
             <Route path={"/projects"} element={<Projects />} />
             <Route path={"/contacts"} element={<Contacts />} />
-          </Provider>
-
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      </BrowserRouter>
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </div>
   );
 }
